@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+    <title data-default>Praveen Kumar — Software Developer</title>
+  </head>
+  <body>
+    <!-- Interactive Background Canvas & Ambient Orbs -->
+    <canvas id="bg-canvas"></canvas>
+    <div class="bg-glow-container">
+      <div class="bg-glow-orb orb-1"></div>
+      <div class="bg-glow-orb orb-2"></div>
+      <div class="bg-glow-orb orb-3"></div>
+    </div>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <a href="#home" class="nav-logo">
+        <span class="logo-text"><span class="logo-first">Praveen</span> <span class="logo-last">Kumar</span></span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#home" data-nav="home">Home</a></li>
+        <li><a href="resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a></li>
+        <li><a href="#projects" data-nav="projects">Projects</a></li>
+        <li><a href="#service" data-nav="service">Service</a></li>
+        <li><a href="#contact" data-nav="contact">Contact</a></li>
+      </ul>
+      <button class="hamburger" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+
+    <!-- Home -->
+    <section id="home">
+      <div class="home-left reveal">
+        <img
+          class="profile-img"
+          src="profile.jpg"
+          alt="Praveen Kumar"
+        />
+      </div>
+      <div class="home-right reveal">
+        <p class="home-greeting">
+          <span class="wave">👋</span> Hi, I'm <strong style="color: #ffffff; font-weight: 800;">Praveen Kumar</strong>
+        </p>
+        <h1 class="home-heading">
+          <span class="typed-text"></span><span class="cursor">&nbsp;</span>
+        </h1>
+        <p class="home-intro">
+          I'm a software developer focused on building robust backend systems
+          and clean, responsive web interfaces. I work primarily with Java and
+          Spring Boot, and I love turning complex problems into simple,
+          maintainable code that ships.
+        </p>
+        <div class="hero-actions">
+          <a href="resume.pdf" target="_blank" rel="noopener noreferrer" class="btn-resume">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+              <polyline points="14 2 14 8 20 8"></polyline>
+              <line x1="16" y1="13" x2="8" y2="13"></line>
+              <line x1="16" y1="17" x2="8" y2="17"></line>
+              <polyline points="10 9 9 9 8 9"></polyline>
+            </svg>
+            <span>View Resume</span>
+          </a>
+          <a href="#contact" class="btn-contact-hero">
+            <span>Get In Touch</span>
+          </a>
+        </div>
+        <p class="skills-label">Skills &amp; Tools</p>
+        <div class="skills">
+          <span class="chip"><span class="chip-icon">☕</span> Java</span>
+          <span class="chip"><span class="chip-icon">🌱</span> Spring Boot</span>
+          <span class="chip"><span class="chip-icon">🌐</span> HTML / CSS / JS</span>
+          <span class="chip"><span class="chip-icon">🗄️</span> MySQL</span>
+          <span class="chip"><span class="chip-icon">🔗</span> Hibernate</span>
+          <span class="chip"><span class="chip-icon">🔧</span> REST APIs</span>
+          <span class="chip"><span class="chip-icon">🚀</span> Postman</span>
+          <span class="chip"><span class="chip-icon">🌿</span> Git</span>
+          <span class="chip"><span class="chip-icon">🐙</span> GitHub</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+      <h2 class="section-title reveal">My Projects</h2>
+      <p class="section-subtitle reveal">
+        A selection of things I've built — from full-stack web apps to
+        backend services and database-driven systems.
+      </p>
+      <div class="grid">
+        <!-- Project 1: E-Commerce Web Application -->
+        <article class="card reveal">
+          <img
+            class="card-thumb"
+            src="https://images.pexels.com/photos/5632402/pexels-photo-5632402.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+            alt="E-Commerce Web Application"
+          />
+          <div class="card-body">
+            <h3 class="card-title">Full-Stack E-Commerce Platform</h3>
+            <p class="card-desc">
+              Complete e-commerce platform with product catalog, cart management, user authentication, and order processing.
+            </p>
+            <div class="tags">
+              <span class="tag">Java</span>
+              <span class="tag">Spring Boot</span>
+              <span class="tag">React JS</span>
+              <span class="tag">MySQL</span>
+            </div>
+            <div class="card-links">
+              <a href="https://github.com/praveen12-19/E-commerce-Backend" target="_blank" rel="noopener">⌨ Backend Repo</a>
+              <a href="https://github.com/praveen12-19/E-commerce-Frontend" target="_blank" rel="noopener">⌨ Frontend Repo</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2: Leave Management System -->
+        <article class="card reveal">
+          <img
+            class="card-thumb"
+            src="https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+            alt="Leave Management System"
+          />
+          <div class="card-body">
+            <h3 class="card-title">College Leave Management System</h3>
+            <p class="card-desc">
+              Role-based leave portal for students, mentors, and administrators with section management and approval workflows.
+            </p>
+            <div class="tags">
+              <span class="tag">Java</span>
+              <span class="tag">Spring Boot</span>
+              <span class="tag">TypeScript</span>
+              <span class="tag">MySQL</span>
+            </div>
+            <div class="card-links">
+              <a href="https://github.com/praveen12-19/Leave-Management-System-Backend" target="_blank" rel="noopener">⌨ Backend Repo</a>
+              <a href="https://github.com/praveen12-19/Leave-Management-System-Frontend" target="_blank" rel="noopener">⌨ Frontend Repo</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 3: Bus Ticket Booking System -->
+        <article class="card reveal">
+          <img
+            class="card-thumb"
+            src="https://images.pexels.com/photos/385997/pexels-photo-385997.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+            alt="Bus Ticket Booking System"
+          />
+          <div class="card-body">
+            <h3 class="card-title">Bus Ticket Booking System</h3>
+            <p class="card-desc">
+              Comprehensive booking engine for searching bus routes, selecting seats, managing reservations, and ticket history.
+            </p>
+            <div class="tags">
+              <span class="tag">Java</span>
+              <span class="tag">Spring Boot</span>
+              <span class="tag">Hibernate</span>
+              <span class="tag">MySQL</span>
+            </div>
+            <div class="card-links">
+              <a href="https://github.com/2310Eswar/BusTicketBookingSystem" target="_blank" rel="noopener">⌨ GitHub Repo</a>
+              <a href="https://drive.google.com/file/d/1p7sDNy0qA3R1VSu1JMZvFkcTtqRodkSv/view?usp=drive_link" target="_blank" rel="noopener">📄 Project Doc</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Service -->
+    <section id="service">
+      <h2 class="section-title reveal">Services</h2>
+      <p class="section-subtitle reveal">
+        What I can help you build, from front to back.
+      </p>
+      <div class="grid">
+        <article class="card service-card reveal">
+          <div class="service-icon">🌐</div>
+          <h3 class="card-title">Web Development</h3>
+          <p class="card-desc">
+            Responsive, modern websites and UIs built with HTML, CSS, and
+            JavaScript.
+          </p>
+        </article>
+        <article class="card service-card reveal">
+          <div class="service-icon">⚙️</div>
+          <h3 class="card-title">Backend Development</h3>
+          <p class="card-desc">
+            Scalable server-side applications and REST APIs using Java and
+            Spring Boot.
+          </p>
+        </article>
+        <article class="card service-card reveal">
+          <div class="service-icon">🗄️</div>
+          <h3 class="card-title">Database Design</h3>
+          <p class="card-desc">
+            Well-structured MySQL schemas and ORM mappings with Hibernate for
+            reliable data layers.
+          </p>
+        </article>
+        <article class="card service-card reveal">
+          <div class="service-icon">🔌</div>
+          <h3 class="card-title">API Integration</h3>
+          <p class="card-desc">
+            Connecting services and third-party APIs with clean, documented,
+            and tested integrations.
+          </p>
+        </article>
+        <article class="card service-card reveal">
+          <div class="service-icon">👥</div>
+          <h3 class="card-title">Team Management</h3>
+          <p class="card-desc">
+            Leading development workflows, collaborating with team members, and ensuring agile delivery.
+          </p>
+        </article>
+        <article class="card service-card reveal">
+          <div class="service-icon">🔒</div>
+          <h3 class="card-title">Code Audit &amp; Security</h3>
+          <p class="card-desc">
+            Performance tuning, query optimization, security audits, and bug fixing.
+          </p>
+        </article>
+        <article class="card service-card reveal">
+          <div class="service-icon">🚀</div>
+          <h3 class="card-title">Innovation</h3>
+          <p class="card-desc">
+            Exploring modern tech stacks, rapid prototyping, and transforming concepts into products.
+          </p>
+        </article>
+        <article class="card service-card reveal">
+          <div class="service-icon">💡</div>
+          <h3 class="card-title">Technical Consulting</h3>
+          <p class="card-desc">
+            System architecture advice, refactoring legacy code, and establishing best practices.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <h2 class="section-title reveal">Get In Touch</h2>
+      <p class="section-subtitle reveal">
+        I'm open to freelance work, full-time roles, and collaboration. Reach
+        out on any platform below.
+      </p>
+      <div class="contact-links reveal">
+        <a class="contact-btn github" href="https://github.com/praveen12-19" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.4.5 0 5.9 0 12.5c0 5.3 3.4 9.8 8.2 11.4.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.5-1.4-1.3-1.8-1.3-1.8-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1.1 1.9 2.9 1.3 3.6 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17.3 4.7 18.3 5 18.3 5c.6 1.7.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 24 12.5C24 5.9 18.6.5 12 .5z"/></svg>
+          GitHub
+        </a>
+        <a class="contact-btn linkedin" href="https://www.linkedin.com/in/praveen-kumar-k-65325a341" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33 0-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0z"/></svg>
+          LinkedIn
+        </a>
+        <a class="contact-btn email" href="https://mail.google.com/mail/?view=cm&fs=1&to=praveen19k12@gmail.com" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 5L2 7"/></svg>
+          Email
+        </a>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p class="footer-copy">© <span id="year"></span> Praveen Kumar. All rights reserved.</p>
+    </footer>
+
+    <script type="module" src="js/script.js"></script>
+    <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+  </body>
+</html>
